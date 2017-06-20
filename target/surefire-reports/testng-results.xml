@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="3" total="5" passed="2">
+  <reporter-output>
+    <line>
+      <![CDATA[Exception in ExtentManager function]]>
+    </line>
+    <line>
+      <![CDATA[Exception in ExtentManager function]]>
+    </line>
+    <line>
+      <![CDATA[Exception in ExtentManager function]]>
+    </line>
+    <line>
+      <![CDATA[C:\Testi\Sel_Workspace\Maven_TestNG\target\ExtentReports\Week25\20062017_193322_AutomationTestReport.html]]>
+    </line>
+    <line>
+      <![CDATA[ - PASSED.]]>
+    </line>
+    <line>
+      <![CDATA[Exception in ExtentManager function]]>
+    </line>
+    <line>
+      <![CDATA[ - PASSED.]]>
+    </line>
+  </reporter-output>
+  <suite name="Suite For Regression Pack 1" duration-ms="8219" started-at="2017-06-20T14:03:22Z" finished-at="2017-06-20T14:03:31Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="8219" started-at="2017-06-20T14:03:22Z" finished-at="2017-06-20T14:03:31Z">
+      <class name="regressionPack_1.TC001_Extent_InitialSetup">
+        <test-method status="PASS" signature="createExtentInstance()[pri:0, instance:regressionPack_1.TC001_Extent_InitialSetup@34b7bfc0]" name="createExtentInstance" is-config="true" duration-ms="0" started-at="2017-06-20T19:33:28Z" finished-at="2017-06-20T19:33:28Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Exception in ExtentManager function]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- createExtentInstance -->
+        <test-method status="PASS" signature="tc001()[pri:0, instance:regressionPack_1.TC001_Extent_InitialSetup@34b7bfc0]" name="tc001" duration-ms="2" started-at="2017-06-20T19:33:28Z" finished-at="2017-06-20T19:33:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc001 -->
+        <test-method status="PASS" signature="operationsOnTestCompletion(org.testng.ITestResult)[pri:0, instance:regressionPack_1.TC001_Extent_InitialSetup@34b7bfc0]" name="operationsOnTestCompletion" is-config="true" duration-ms="1" started-at="2017-06-20T19:33:28Z" finished-at="2017-06-20T19:33:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc001 status=SUCCESS method=TC001_Extent_InitialSetup.tc001()[pri:0, instance:regressionPack_1.TC001_Extent_InitialSetup@34b7bfc0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[ - PASSED.]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- operationsOnTestCompletion -->
+        <test-method status="PASS" signature="tearDownFunction()[pri:0, instance:regressionPack_1.TC001_Extent_InitialSetup@34b7bfc0]" name="tearDownFunction" is-config="true" duration-ms="141" started-at="2017-06-20T19:33:28Z" finished-at="2017-06-20T19:33:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownFunction -->
+      </class> <!-- regressionPack_1.TC001_Extent_InitialSetup -->
+      <class name="regressionPack_1.TC002_Extent_SuiteTest">
+        <test-method status="PASS" signature="CreateErrorRepFolder()[pri:0, instance:regressionPack_1.TC002_Extent_SuiteTest@67b6d4ae]" name="CreateErrorRepFolder" is-config="true" duration-ms="11" started-at="2017-06-20T19:33:22Z" finished-at="2017-06-20T19:33:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateErrorRepFolder -->
+        <test-method status="PASS" signature="browserSetup(java.lang.String)[pri:0, instance:regressionPack_1.TC002_Extent_SuiteTest@67b6d4ae]" name="browserSetup" is-config="true" duration-ms="4636" started-at="2017-06-20T19:33:22Z" finished-at="2017-06-20T19:33:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserSetup -->
+        <test-method status="PASS" signature="createExtentInstance()[pri:0, instance:regressionPack_1.TC002_Extent_SuiteTest@67b6d4ae]" name="createExtentInstance" is-config="true" duration-ms="837" started-at="2017-06-20T19:33:27Z" finished-at="2017-06-20T19:33:28Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Exception in ExtentManager function]]>
+            </line>
+            <line>
+              <![CDATA[C:\Testi\Sel_Workspace\Maven_TestNG\target\ExtentReports\Week25\20062017_193322_AutomationTestReport.html]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- createExtentInstance -->
+        <test-method status="PASS" signature="tc002()[pri:0, instance:regressionPack_1.TC002_Extent_SuiteTest@67b6d4ae]" name="tc002" duration-ms="19" started-at="2017-06-20T19:33:28Z" finished-at="2017-06-20T19:33:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc002 -->
+        <test-method status="PASS" signature="operationsOnTestCompletion(org.testng.ITestResult)[pri:0, instance:regressionPack_1.TC002_Extent_SuiteTest@67b6d4ae]" name="operationsOnTestCompletion" is-config="true" duration-ms="2" started-at="2017-06-20T19:33:28Z" finished-at="2017-06-20T19:33:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc002 status=SUCCESS method=TC002_Extent_SuiteTest.tc002()[pri:0, instance:regressionPack_1.TC002_Extent_SuiteTest@67b6d4ae] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[ - PASSED.]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- operationsOnTestCompletion -->
+        <test-method status="PASS" signature="tearDownFunction()[pri:0, instance:regressionPack_1.TC002_Extent_SuiteTest@67b6d4ae]" name="tearDownFunction" is-config="true" duration-ms="506" started-at="2017-06-20T19:33:28Z" finished-at="2017-06-20T19:33:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownFunction -->
+        <test-method status="PASS" signature="closeSession()[pri:0, instance:regressionPack_1.TC002_Extent_SuiteTest@67b6d4ae]" name="closeSession" is-config="true" duration-ms="2060" started-at="2017-06-20T19:33:29Z" finished-at="2017-06-20T19:33:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeSession -->
+      </class> <!-- regressionPack_1.TC002_Extent_SuiteTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite For Regression Pack 1 -->
+</testng-results>

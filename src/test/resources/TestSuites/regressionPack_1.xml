@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite For Regression Pack 1">
+  <test name="Test">
+    <classes>
+      <class name="regressionPack_1.TC002_Extent_SuiteTest"/>
+      <class name="regressionPack_1.TC001_Extent_InitialSetup"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite For Regression Pack 1 -->
