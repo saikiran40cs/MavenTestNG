@@ -1,0 +1,388 @@
+2017-06-21 12:26:13 DEBUG RequestAddCookies:123 -CookieSpec selected: default
+2017-06-21 12:26:13 DEBUG RequestAuthCache:77 -Auth cache not set in the context
+2017-06-21 12:26:13 DEBUG PoolingHttpClientConnectionManager:255 -Connection request: [route: {}->http://localhost:7644][total kept alive: 0; route allocated: 0 of 2000; total allocated: 0 of 2000]
+2017-06-21 12:26:13 DEBUG PoolingHttpClientConnectionManager:288 -Connection leased: [id: 0][route: {}->http://localhost:7644][total kept alive: 0; route allocated: 1 of 2000; total allocated: 1 of 2000]
+2017-06-21 12:26:13 DEBUG MainClientExec:235 -Opening connection {}->http://localhost:7644
+2017-06-21 12:26:13 DEBUG DefaultHttpClientConnectionOperator:139 -Connecting to localhost/127.0.0.1:7644
+2017-06-21 12:26:13 DEBUG DefaultHttpClientConnectionOperator:146 -Connection established 127.0.0.1:60031<->127.0.0.1:7644
+2017-06-21 12:26:13 DEBUG DefaultManagedHttpClientConnection:88 -http-outgoing-0: set socket timeout to 10800000
+2017-06-21 12:26:13 DEBUG MainClientExec:256 -Executing request POST /session HTTP/1.1
+2017-06-21 12:26:13 DEBUG MainClientExec:261 -Target auth state: UNCHALLENGED
+2017-06-21 12:26:13 DEBUG MainClientExec:267 -Proxy auth state: UNCHALLENGED
+2017-06-21 12:26:13 DEBUG headers:133 -http-outgoing-0 >> POST /session HTTP/1.1
+2017-06-21 12:26:13 DEBUG headers:136 -http-outgoing-0 >> Content-Type: application/json; charset=utf-8
+2017-06-21 12:26:13 DEBUG headers:136 -http-outgoing-0 >> Content-Length: 1386
+2017-06-21 12:26:13 DEBUG headers:136 -http-outgoing-0 >> Host: localhost:7644
+2017-06-21 12:26:13 DEBUG headers:136 -http-outgoing-0 >> Connection: Keep-Alive
+2017-06-21 12:26:13 DEBUG headers:136 -http-outgoing-0 >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_121)
+2017-06-21 12:26:13 DEBUG headers:136 -http-outgoing-0 >> Accept-Encoding: gzip,deflate
+2017-06-21 12:26:13 DEBUG wire:73 -http-outgoing-0 >> "POST /session HTTP/1.1[\r][\n]"
+2017-06-21 12:26:13 DEBUG wire:73 -http-outgoing-0 >> "Content-Type: application/json; charset=utf-8[\r][\n]"
+2017-06-21 12:26:13 DEBUG wire:73 -http-outgoing-0 >> "Content-Length: 1386[\r][\n]"
+2017-06-21 12:26:13 DEBUG wire:73 -http-outgoing-0 >> "Host: localhost:7644[\r][\n]"
+2017-06-21 12:26:13 DEBUG wire:73 -http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+2017-06-21 12:26:13 DEBUG wire:73 -http-outgoing-0 >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_121)[\r][\n]"
+2017-06-21 12:26:13 DEBUG wire:73 -http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2017-06-21 12:26:13 DEBUG wire:73 -http-outgoing-0 >> "[\r][\n]"
+2017-06-21 12:26:13 DEBUG wire:73 -http-outgoing-0 >> "{[\n]"
+2017-06-21 12:26:13 DEBUG wire:73 -http-outgoing-0 >> "  "desiredCapabilities": {[\n]"
+2017-06-21 12:26:13 DEBUG wire:73 -http-outgoing-0 >> "    "ensureCleanSession": true,[\n]"
+2017-06-21 12:26:13 DEBUG wire:73 -http-outgoing-0 >> "    "network.proxy.type": 4,[\n]"
+2017-06-21 12:26:13 DEBUG wire:73 -http-outgoing-0 >> "    "acceptSslCerts": true,[\n]"
+2017-06-21 12:26:13 DEBUG wire:73 -http-outgoing-0 >> "    "browserName": "chrome",[\n]"
+2017-06-21 12:26:13 DEBUG wire:73 -http-outgoing-0 >> "    "chromeOptions": {[\n]"
+2017-06-21 12:26:13 DEBUG wire:73 -http-outgoing-0 >> "      "args": [],[\n]"
+2017-06-21 12:26:13 DEBUG wire:73 -http-outgoing-0 >> "      "extensions": [],[\n]"
+2017-06-21 12:26:13 DEBUG wire:73 -http-outgoing-0 >> "      "prefs": {[\n]"
+2017-06-21 12:26:13 DEBUG wire:73 -http-outgoing-0 >> "        "profile.default_content_settings.popups": 0,[\n]"
+2017-06-21 12:26:13 DEBUG wire:73 -http-outgoing-0 >> "        "download.prompt_for_download": "true",[\n]"
+2017-06-21 12:26:13 DEBUG wire:73 -http-outgoing-0 >> "        "--always-authorize-plugins": false,[\n]"
+2017-06-21 12:26:13 DEBUG wire:73 -http-outgoing-0 >> "        "download.extensions_to_open": "pdf",[\n]"
+2017-06-21 12:26:13 DEBUG wire:73 -http-outgoing-0 >> "        "download.default_directory": "C:\\Users\\saikiran.nataraja\\git\\MavenTestNG\\downloads\\"[\n]"
+2017-06-21 12:26:13 DEBUG wire:73 -http-outgoing-0 >> "      }[\n]"
+2017-06-21 12:26:13 DEBUG wire:73 -http-outgoing-0 >> "    },[\n]"
+2017-06-21 12:26:13 DEBUG wire:73 -http-outgoing-0 >> "    "version": "",[\n]"
+2017-06-21 12:26:13 DEBUG wire:73 -http-outgoing-0 >> "    "platform": "ANY"[\n]"
+2017-06-21 12:26:13 DEBUG wire:73 -http-outgoing-0 >> "  },[\n]"
+2017-06-21 12:26:13 DEBUG wire:73 -http-outgoing-0 >> "  "requiredCapabilities": {},[\n]"
+2017-06-21 12:26:13 DEBUG wire:73 -http-outgoing-0 >> "  "capabilities": {[\n]"
+2017-06-21 12:26:13 DEBUG wire:73 -http-outgoing-0 >> "    "desiredCapabilities": {[\n]"
+2017-06-21 12:26:13 DEBUG wire:73 -http-outgoing-0 >> "      "ensureCleanSession": true,[\n]"
+2017-06-21 12:26:13 DEBUG wire:73 -http-outgoing-0 >> "      "network.proxy.type": 4,[\n]"
+2017-06-21 12:26:13 DEBUG wire:73 -http-outgoing-0 >> "      "acceptSslCerts": true,[\n]"
+2017-06-21 12:26:13 DEBUG wire:73 -http-outgoing-0 >> "      "browserName": "chrome",[\n]"
+2017-06-21 12:26:13 DEBUG wire:73 -http-outgoing-0 >> "      "chromeOptions": {[\n]"
+2017-06-21 12:26:13 DEBUG wire:73 -http-outgoing-0 >> "        "args": [],[\n]"
+2017-06-21 12:26:13 DEBUG wire:73 -http-outgoing-0 >> "        "extensions": [],[\n]"
+2017-06-21 12:26:13 DEBUG wire:73 -http-outgoing-0 >> "        "prefs": {[\n]"
+2017-06-21 12:26:13 DEBUG wire:73 -http-outgoing-0 >> "          "profile.default_content_settings.popups": 0,[\n]"
+2017-06-21 12:26:13 DEBUG wire:73 -http-outgoing-0 >> "          "download.prompt_for_download": "true",[\n]"
+2017-06-21 12:26:13 DEBUG wire:73 -http-outgoing-0 >> "          "--always-authorize-plugins": false,[\n]"
+2017-06-21 12:26:13 DEBUG wire:73 -http-outgoing-0 >> "          "download.extensions_to_open": "pdf",[\n]"
+2017-06-21 12:26:13 DEBUG wire:73 -http-outgoing-0 >> "          "download.default_directory": "C:\\Users\\saikiran.nataraja\\git\\MavenTestNG\\downloads\\"[\n]"
+2017-06-21 12:26:13 DEBUG wire:73 -http-outgoing-0 >> "        }[\n]"
+2017-06-21 12:26:13 DEBUG wire:73 -http-outgoing-0 >> "      },[\n]"
+2017-06-21 12:26:13 DEBUG wire:73 -http-outgoing-0 >> "      "version": "",[\n]"
+2017-06-21 12:26:13 DEBUG wire:73 -http-outgoing-0 >> "      "platform": "ANY"[\n]"
+2017-06-21 12:26:13 DEBUG wire:73 -http-outgoing-0 >> "    },[\n]"
+2017-06-21 12:26:13 DEBUG wire:73 -http-outgoing-0 >> "    "requiredCapabilities": {},[\n]"
+2017-06-21 12:26:13 DEBUG wire:73 -http-outgoing-0 >> "    "alwaysMatch": {},[\n]"
+2017-06-21 12:26:13 DEBUG wire:73 -http-outgoing-0 >> "    "firstMatch": [[\n]"
+2017-06-21 12:26:13 DEBUG wire:73 -http-outgoing-0 >> "      {[\n]"
+2017-06-21 12:26:13 DEBUG wire:73 -http-outgoing-0 >> "        "browserName": "chrome"[\n]"
+2017-06-21 12:26:13 DEBUG wire:73 -http-outgoing-0 >> "      }[\n]"
+2017-06-21 12:26:13 DEBUG wire:73 -http-outgoing-0 >> "    ][\n]"
+2017-06-21 12:26:13 DEBUG wire:73 -http-outgoing-0 >> "  }[\n]"
+2017-06-21 12:26:13 DEBUG wire:87 -http-outgoing-0 >> "}"
+2017-06-21 12:26:14 DEBUG wire:73 -http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
+2017-06-21 12:26:14 DEBUG wire:73 -http-outgoing-0 << "Content-Length:784[\r][\n]"
+2017-06-21 12:26:14 DEBUG wire:73 -http-outgoing-0 << "Content-Type:application/json; charset=utf-8[\r][\n]"
+2017-06-21 12:26:14 DEBUG wire:73 -http-outgoing-0 << "Connection:close[\r][\n]"
+2017-06-21 12:26:14 DEBUG wire:73 -http-outgoing-0 << "[\r][\n]"
+2017-06-21 12:26:14 DEBUG wire:87 -http-outgoing-0 << "{"sessionId":"938fdf49bd57f6ab8d063ce1e76b14c9","status":0,"value":{"acceptSslCerts":true,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"browserName":"chrome","chrome":{"chromedriverVersion":"2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41)","userDataDir":"C:\\Users\\SAIKIR~1.NAT\\AppData\\Local\\Temp\\scoped_dir6728_544"},"cssSelectorsEnabled":true,"databaseEnabled":false,"handlesAlerts":true,"hasTouchScreen":false,"javascriptEnabled":true,"locationContextEnabled":true,"mobileEmulationEnabled":false,"nativeEvents":true,"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platform":"Windows NT","rotatable":false,"takesHeapSnapshot":true,"takesScreenshot":true,"unexpectedAlertBehaviour":"","version":"59.0.3071.109","webStorageEnabled":true}}"
+2017-06-21 12:26:14 DEBUG headers:122 -http-outgoing-0 << HTTP/1.1 200 OK
+2017-06-21 12:26:14 DEBUG headers:125 -http-outgoing-0 << Content-Length:784
+2017-06-21 12:26:14 DEBUG headers:125 -http-outgoing-0 << Content-Type:application/json; charset=utf-8
+2017-06-21 12:26:14 DEBUG headers:125 -http-outgoing-0 << Connection:close
+2017-06-21 12:26:14 DEBUG DefaultManagedHttpClientConnection:79 -http-outgoing-0: Close connection
+2017-06-21 12:26:14 DEBUG MainClientExec:104 -Connection discarded
+2017-06-21 12:26:14 DEBUG PoolingHttpClientConnectionManager:326 -Connection released: [id: 0][route: {}->http://localhost:7644][total kept alive: 0; route allocated: 0 of 2000; total allocated: 0 of 2000]
+2017-06-21 12:26:14 DEBUG RequestAddCookies:123 -CookieSpec selected: default
+2017-06-21 12:26:14 DEBUG RequestAuthCache:77 -Auth cache not set in the context
+2017-06-21 12:26:14 DEBUG PoolingHttpClientConnectionManager:255 -Connection request: [route: {}->http://localhost:7644][total kept alive: 0; route allocated: 0 of 2000; total allocated: 0 of 2000]
+2017-06-21 12:26:14 DEBUG PoolingHttpClientConnectionManager:288 -Connection leased: [id: 1][route: {}->http://localhost:7644][total kept alive: 0; route allocated: 1 of 2000; total allocated: 1 of 2000]
+2017-06-21 12:26:14 DEBUG MainClientExec:235 -Opening connection {}->http://localhost:7644
+2017-06-21 12:26:14 DEBUG DefaultHttpClientConnectionOperator:139 -Connecting to localhost/127.0.0.1:7644
+2017-06-21 12:26:14 DEBUG DefaultHttpClientConnectionOperator:146 -Connection established 127.0.0.1:60040<->127.0.0.1:7644
+2017-06-21 12:26:14 DEBUG DefaultManagedHttpClientConnection:88 -http-outgoing-1: set socket timeout to 10800000
+2017-06-21 12:26:14 DEBUG MainClientExec:256 -Executing request POST /session/938fdf49bd57f6ab8d063ce1e76b14c9/window/current/maximize HTTP/1.1
+2017-06-21 12:26:14 DEBUG MainClientExec:261 -Target auth state: UNCHALLENGED
+2017-06-21 12:26:14 DEBUG MainClientExec:267 -Proxy auth state: UNCHALLENGED
+2017-06-21 12:26:14 DEBUG headers:133 -http-outgoing-1 >> POST /session/938fdf49bd57f6ab8d063ce1e76b14c9/window/current/maximize HTTP/1.1
+2017-06-21 12:26:14 DEBUG headers:136 -http-outgoing-1 >> Content-Type: application/json; charset=utf-8
+2017-06-21 12:26:14 DEBUG headers:136 -http-outgoing-1 >> Content-Length: 45
+2017-06-21 12:26:14 DEBUG headers:136 -http-outgoing-1 >> Host: localhost:7644
+2017-06-21 12:26:14 DEBUG headers:136 -http-outgoing-1 >> Connection: Keep-Alive
+2017-06-21 12:26:14 DEBUG headers:136 -http-outgoing-1 >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_121)
+2017-06-21 12:26:14 DEBUG headers:136 -http-outgoing-1 >> Accept-Encoding: gzip,deflate
+2017-06-21 12:26:14 DEBUG wire:73 -http-outgoing-1 >> "POST /session/938fdf49bd57f6ab8d063ce1e76b14c9/window/current/maximize HTTP/1.1[\r][\n]"
+2017-06-21 12:26:14 DEBUG wire:73 -http-outgoing-1 >> "Content-Type: application/json; charset=utf-8[\r][\n]"
+2017-06-21 12:26:14 DEBUG wire:73 -http-outgoing-1 >> "Content-Length: 45[\r][\n]"
+2017-06-21 12:26:14 DEBUG wire:73 -http-outgoing-1 >> "Host: localhost:7644[\r][\n]"
+2017-06-21 12:26:14 DEBUG wire:73 -http-outgoing-1 >> "Connection: Keep-Alive[\r][\n]"
+2017-06-21 12:26:14 DEBUG wire:73 -http-outgoing-1 >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_121)[\r][\n]"
+2017-06-21 12:26:14 DEBUG wire:73 -http-outgoing-1 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2017-06-21 12:26:14 DEBUG wire:73 -http-outgoing-1 >> "[\r][\n]"
+2017-06-21 12:26:14 DEBUG wire:87 -http-outgoing-1 >> "{"windowHandle":"current","handle":"current"}"
+2017-06-21 12:26:16 DEBUG wire:73 -http-outgoing-1 << "HTTP/1.1 200 OK[\r][\n]"
+2017-06-21 12:26:16 DEBUG wire:73 -http-outgoing-1 << "Content-Length:72[\r][\n]"
+2017-06-21 12:26:16 DEBUG wire:73 -http-outgoing-1 << "Content-Type:application/json; charset=utf-8[\r][\n]"
+2017-06-21 12:26:16 DEBUG wire:73 -http-outgoing-1 << "Connection:close[\r][\n]"
+2017-06-21 12:26:16 DEBUG wire:73 -http-outgoing-1 << "[\r][\n]"
+2017-06-21 12:26:16 DEBUG wire:87 -http-outgoing-1 << "{"sessionId":"938fdf49bd57f6ab8d063ce1e76b14c9","status":0,"value":null}"
+2017-06-21 12:26:16 DEBUG headers:122 -http-outgoing-1 << HTTP/1.1 200 OK
+2017-06-21 12:26:16 DEBUG headers:125 -http-outgoing-1 << Content-Length:72
+2017-06-21 12:26:16 DEBUG headers:125 -http-outgoing-1 << Content-Type:application/json; charset=utf-8
+2017-06-21 12:26:16 DEBUG headers:125 -http-outgoing-1 << Connection:close
+2017-06-21 12:26:16 DEBUG DefaultManagedHttpClientConnection:79 -http-outgoing-1: Close connection
+2017-06-21 12:26:16 DEBUG MainClientExec:104 -Connection discarded
+2017-06-21 12:26:16 DEBUG PoolingHttpClientConnectionManager:326 -Connection released: [id: 1][route: {}->http://localhost:7644][total kept alive: 0; route allocated: 0 of 2000; total allocated: 0 of 2000]
+2017-06-21 12:26:16 DEBUG RequestAddCookies:123 -CookieSpec selected: default
+2017-06-21 12:26:16 DEBUG RequestAuthCache:77 -Auth cache not set in the context
+2017-06-21 12:26:16 DEBUG PoolingHttpClientConnectionManager:255 -Connection request: [route: {}->http://localhost:7644][total kept alive: 0; route allocated: 0 of 2000; total allocated: 0 of 2000]
+2017-06-21 12:26:16 DEBUG PoolingHttpClientConnectionManager:288 -Connection leased: [id: 2][route: {}->http://localhost:7644][total kept alive: 0; route allocated: 1 of 2000; total allocated: 1 of 2000]
+2017-06-21 12:26:16 DEBUG MainClientExec:235 -Opening connection {}->http://localhost:7644
+2017-06-21 12:26:16 DEBUG DefaultHttpClientConnectionOperator:139 -Connecting to localhost/127.0.0.1:7644
+2017-06-21 12:26:16 DEBUG DefaultHttpClientConnectionOperator:146 -Connection established 127.0.0.1:60043<->127.0.0.1:7644
+2017-06-21 12:26:16 DEBUG DefaultManagedHttpClientConnection:88 -http-outgoing-2: set socket timeout to 10800000
+2017-06-21 12:26:16 DEBUG MainClientExec:256 -Executing request DELETE /session/938fdf49bd57f6ab8d063ce1e76b14c9/cookie HTTP/1.1
+2017-06-21 12:26:16 DEBUG MainClientExec:261 -Target auth state: UNCHALLENGED
+2017-06-21 12:26:16 DEBUG MainClientExec:267 -Proxy auth state: UNCHALLENGED
+2017-06-21 12:26:16 DEBUG headers:133 -http-outgoing-2 >> DELETE /session/938fdf49bd57f6ab8d063ce1e76b14c9/cookie HTTP/1.1
+2017-06-21 12:26:16 DEBUG headers:136 -http-outgoing-2 >> Host: localhost:7644
+2017-06-21 12:26:16 DEBUG headers:136 -http-outgoing-2 >> Connection: Keep-Alive
+2017-06-21 12:26:16 DEBUG headers:136 -http-outgoing-2 >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_121)
+2017-06-21 12:26:16 DEBUG headers:136 -http-outgoing-2 >> Accept-Encoding: gzip,deflate
+2017-06-21 12:26:16 DEBUG wire:73 -http-outgoing-2 >> "DELETE /session/938fdf49bd57f6ab8d063ce1e76b14c9/cookie HTTP/1.1[\r][\n]"
+2017-06-21 12:26:16 DEBUG wire:73 -http-outgoing-2 >> "Host: localhost:7644[\r][\n]"
+2017-06-21 12:26:16 DEBUG wire:73 -http-outgoing-2 >> "Connection: Keep-Alive[\r][\n]"
+2017-06-21 12:26:16 DEBUG wire:73 -http-outgoing-2 >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_121)[\r][\n]"
+2017-06-21 12:26:16 DEBUG wire:73 -http-outgoing-2 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2017-06-21 12:26:16 DEBUG wire:73 -http-outgoing-2 >> "[\r][\n]"
+2017-06-21 12:26:16 DEBUG wire:73 -http-outgoing-2 << "HTTP/1.1 200 OK[\r][\n]"
+2017-06-21 12:26:16 DEBUG wire:73 -http-outgoing-2 << "Content-Length:72[\r][\n]"
+2017-06-21 12:26:16 DEBUG wire:73 -http-outgoing-2 << "Content-Type:application/json; charset=utf-8[\r][\n]"
+2017-06-21 12:26:16 DEBUG wire:73 -http-outgoing-2 << "Connection:close[\r][\n]"
+2017-06-21 12:26:16 DEBUG wire:73 -http-outgoing-2 << "[\r][\n]"
+2017-06-21 12:26:16 DEBUG wire:87 -http-outgoing-2 << "{"sessionId":"938fdf49bd57f6ab8d063ce1e76b14c9","status":0,"value":null}"
+2017-06-21 12:26:16 DEBUG headers:122 -http-outgoing-2 << HTTP/1.1 200 OK
+2017-06-21 12:26:16 DEBUG headers:125 -http-outgoing-2 << Content-Length:72
+2017-06-21 12:26:16 DEBUG headers:125 -http-outgoing-2 << Content-Type:application/json; charset=utf-8
+2017-06-21 12:26:16 DEBUG headers:125 -http-outgoing-2 << Connection:close
+2017-06-21 12:26:16 DEBUG DefaultManagedHttpClientConnection:79 -http-outgoing-2: Close connection
+2017-06-21 12:26:16 DEBUG MainClientExec:104 -Connection discarded
+2017-06-21 12:26:16 DEBUG PoolingHttpClientConnectionManager:326 -Connection released: [id: 2][route: {}->http://localhost:7644][total kept alive: 0; route allocated: 0 of 2000; total allocated: 0 of 2000]
+2017-06-21 12:26:16 DEBUG RequestAddCookies:123 -CookieSpec selected: default
+2017-06-21 12:26:16 DEBUG RequestAuthCache:77 -Auth cache not set in the context
+2017-06-21 12:26:16 DEBUG PoolingHttpClientConnectionManager:255 -Connection request: [route: {}->http://localhost:7644][total kept alive: 0; route allocated: 0 of 2000; total allocated: 0 of 2000]
+2017-06-21 12:26:16 DEBUG PoolingHttpClientConnectionManager:288 -Connection leased: [id: 3][route: {}->http://localhost:7644][total kept alive: 0; route allocated: 1 of 2000; total allocated: 1 of 2000]
+2017-06-21 12:26:16 DEBUG MainClientExec:235 -Opening connection {}->http://localhost:7644
+2017-06-21 12:26:16 DEBUG DefaultHttpClientConnectionOperator:139 -Connecting to localhost/127.0.0.1:7644
+2017-06-21 12:26:16 DEBUG DefaultHttpClientConnectionOperator:146 -Connection established 127.0.0.1:60044<->127.0.0.1:7644
+2017-06-21 12:26:16 DEBUG DefaultManagedHttpClientConnection:88 -http-outgoing-3: set socket timeout to 10800000
+2017-06-21 12:26:16 DEBUG MainClientExec:256 -Executing request POST /session/938fdf49bd57f6ab8d063ce1e76b14c9/timeouts HTTP/1.1
+2017-06-21 12:26:16 DEBUG MainClientExec:261 -Target auth state: UNCHALLENGED
+2017-06-21 12:26:16 DEBUG MainClientExec:267 -Proxy auth state: UNCHALLENGED
+2017-06-21 12:26:16 DEBUG headers:133 -http-outgoing-3 >> POST /session/938fdf49bd57f6ab8d063ce1e76b14c9/timeouts HTTP/1.1
+2017-06-21 12:26:16 DEBUG headers:136 -http-outgoing-3 >> Content-Type: application/json; charset=utf-8
+2017-06-21 12:26:16 DEBUG headers:136 -http-outgoing-3 >> Content-Length: 29
+2017-06-21 12:26:16 DEBUG headers:136 -http-outgoing-3 >> Host: localhost:7644
+2017-06-21 12:26:16 DEBUG headers:136 -http-outgoing-3 >> Connection: Keep-Alive
+2017-06-21 12:26:16 DEBUG headers:136 -http-outgoing-3 >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_121)
+2017-06-21 12:26:16 DEBUG headers:136 -http-outgoing-3 >> Accept-Encoding: gzip,deflate
+2017-06-21 12:26:16 DEBUG wire:73 -http-outgoing-3 >> "POST /session/938fdf49bd57f6ab8d063ce1e76b14c9/timeouts HTTP/1.1[\r][\n]"
+2017-06-21 12:26:16 DEBUG wire:73 -http-outgoing-3 >> "Content-Type: application/json; charset=utf-8[\r][\n]"
+2017-06-21 12:26:16 DEBUG wire:73 -http-outgoing-3 >> "Content-Length: 29[\r][\n]"
+2017-06-21 12:26:16 DEBUG wire:73 -http-outgoing-3 >> "Host: localhost:7644[\r][\n]"
+2017-06-21 12:26:16 DEBUG wire:73 -http-outgoing-3 >> "Connection: Keep-Alive[\r][\n]"
+2017-06-21 12:26:16 DEBUG wire:73 -http-outgoing-3 >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_121)[\r][\n]"
+2017-06-21 12:26:16 DEBUG wire:73 -http-outgoing-3 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2017-06-21 12:26:16 DEBUG wire:73 -http-outgoing-3 >> "[\r][\n]"
+2017-06-21 12:26:16 DEBUG wire:87 -http-outgoing-3 >> "{"type":"implicit","ms":3000}"
+2017-06-21 12:26:16 DEBUG wire:73 -http-outgoing-3 << "HTTP/1.1 200 OK[\r][\n]"
+2017-06-21 12:26:16 DEBUG wire:73 -http-outgoing-3 << "Content-Length:72[\r][\n]"
+2017-06-21 12:26:16 DEBUG wire:73 -http-outgoing-3 << "Content-Type:application/json; charset=utf-8[\r][\n]"
+2017-06-21 12:26:16 DEBUG wire:73 -http-outgoing-3 << "Connection:close[\r][\n]"
+2017-06-21 12:26:16 DEBUG wire:73 -http-outgoing-3 << "[\r][\n]"
+2017-06-21 12:26:16 DEBUG wire:87 -http-outgoing-3 << "{"sessionId":"938fdf49bd57f6ab8d063ce1e76b14c9","status":0,"value":null}"
+2017-06-21 12:26:16 DEBUG headers:122 -http-outgoing-3 << HTTP/1.1 200 OK
+2017-06-21 12:26:16 DEBUG headers:125 -http-outgoing-3 << Content-Length:72
+2017-06-21 12:26:16 DEBUG headers:125 -http-outgoing-3 << Content-Type:application/json; charset=utf-8
+2017-06-21 12:26:16 DEBUG headers:125 -http-outgoing-3 << Connection:close
+2017-06-21 12:26:16 DEBUG DefaultManagedHttpClientConnection:79 -http-outgoing-3: Close connection
+2017-06-21 12:26:16 DEBUG MainClientExec:104 -Connection discarded
+2017-06-21 12:26:16 DEBUG PoolingHttpClientConnectionManager:326 -Connection released: [id: 3][route: {}->http://localhost:7644][total kept alive: 0; route allocated: 0 of 2000; total allocated: 0 of 2000]
+2017-06-21 12:26:16 DEBUG RequestAddCookies:123 -CookieSpec selected: default
+2017-06-21 12:26:16 DEBUG RequestAuthCache:77 -Auth cache not set in the context
+2017-06-21 12:26:16 DEBUG PoolingHttpClientConnectionManager:255 -Connection request: [route: {}->http://localhost:7644][total kept alive: 0; route allocated: 0 of 2000; total allocated: 0 of 2000]
+2017-06-21 12:26:16 DEBUG PoolingHttpClientConnectionManager:288 -Connection leased: [id: 4][route: {}->http://localhost:7644][total kept alive: 0; route allocated: 1 of 2000; total allocated: 1 of 2000]
+2017-06-21 12:26:16 DEBUG MainClientExec:235 -Opening connection {}->http://localhost:7644
+2017-06-21 12:26:16 DEBUG DefaultHttpClientConnectionOperator:139 -Connecting to localhost/127.0.0.1:7644
+2017-06-21 12:26:16 DEBUG DefaultHttpClientConnectionOperator:146 -Connection established 127.0.0.1:60045<->127.0.0.1:7644
+2017-06-21 12:26:16 DEBUG DefaultManagedHttpClientConnection:88 -http-outgoing-4: set socket timeout to 10800000
+2017-06-21 12:26:16 DEBUG MainClientExec:256 -Executing request POST /session/938fdf49bd57f6ab8d063ce1e76b14c9/timeouts HTTP/1.1
+2017-06-21 12:26:16 DEBUG MainClientExec:261 -Target auth state: UNCHALLENGED
+2017-06-21 12:26:16 DEBUG MainClientExec:267 -Proxy auth state: UNCHALLENGED
+2017-06-21 12:26:16 DEBUG headers:133 -http-outgoing-4 >> POST /session/938fdf49bd57f6ab8d063ce1e76b14c9/timeouts HTTP/1.1
+2017-06-21 12:26:16 DEBUG headers:136 -http-outgoing-4 >> Content-Type: application/json; charset=utf-8
+2017-06-21 12:26:16 DEBUG headers:136 -http-outgoing-4 >> Content-Length: 31
+2017-06-21 12:26:16 DEBUG headers:136 -http-outgoing-4 >> Host: localhost:7644
+2017-06-21 12:26:16 DEBUG headers:136 -http-outgoing-4 >> Connection: Keep-Alive
+2017-06-21 12:26:16 DEBUG headers:136 -http-outgoing-4 >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_121)
+2017-06-21 12:26:16 DEBUG headers:136 -http-outgoing-4 >> Accept-Encoding: gzip,deflate
+2017-06-21 12:26:16 DEBUG wire:73 -http-outgoing-4 >> "POST /session/938fdf49bd57f6ab8d063ce1e76b14c9/timeouts HTTP/1.1[\r][\n]"
+2017-06-21 12:26:16 DEBUG wire:73 -http-outgoing-4 >> "Content-Type: application/json; charset=utf-8[\r][\n]"
+2017-06-21 12:26:16 DEBUG wire:73 -http-outgoing-4 >> "Content-Length: 31[\r][\n]"
+2017-06-21 12:26:16 DEBUG wire:73 -http-outgoing-4 >> "Host: localhost:7644[\r][\n]"
+2017-06-21 12:26:16 DEBUG wire:73 -http-outgoing-4 >> "Connection: Keep-Alive[\r][\n]"
+2017-06-21 12:26:16 DEBUG wire:73 -http-outgoing-4 >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_121)[\r][\n]"
+2017-06-21 12:26:16 DEBUG wire:73 -http-outgoing-4 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2017-06-21 12:26:16 DEBUG wire:73 -http-outgoing-4 >> "[\r][\n]"
+2017-06-21 12:26:16 DEBUG wire:87 -http-outgoing-4 >> "{"type":"page load","ms":60000}"
+2017-06-21 12:26:16 DEBUG wire:73 -http-outgoing-4 << "HTTP/1.1 200 OK[\r][\n]"
+2017-06-21 12:26:16 DEBUG wire:73 -http-outgoing-4 << "Content-Length:72[\r][\n]"
+2017-06-21 12:26:16 DEBUG wire:73 -http-outgoing-4 << "Content-Type:application/json; charset=utf-8[\r][\n]"
+2017-06-21 12:26:16 DEBUG wire:73 -http-outgoing-4 << "Connection:close[\r][\n]"
+2017-06-21 12:26:16 DEBUG wire:73 -http-outgoing-4 << "[\r][\n]"
+2017-06-21 12:26:16 DEBUG wire:87 -http-outgoing-4 << "{"sessionId":"938fdf49bd57f6ab8d063ce1e76b14c9","status":0,"value":null}"
+2017-06-21 12:26:16 DEBUG headers:122 -http-outgoing-4 << HTTP/1.1 200 OK
+2017-06-21 12:26:16 DEBUG headers:125 -http-outgoing-4 << Content-Length:72
+2017-06-21 12:26:16 DEBUG headers:125 -http-outgoing-4 << Content-Type:application/json; charset=utf-8
+2017-06-21 12:26:16 DEBUG headers:125 -http-outgoing-4 << Connection:close
+2017-06-21 12:26:16 DEBUG DefaultManagedHttpClientConnection:79 -http-outgoing-4: Close connection
+2017-06-21 12:26:16 DEBUG MainClientExec:104 -Connection discarded
+2017-06-21 12:26:16 DEBUG PoolingHttpClientConnectionManager:326 -Connection released: [id: 4][route: {}->http://localhost:7644][total kept alive: 0; route allocated: 0 of 2000; total allocated: 0 of 2000]
+2017-06-21 12:26:17 INFO  Log:12 -****************************************************************************************
+2017-06-21 12:26:17 INFO  Log:13 -****************************************************************************************
+2017-06-21 12:26:17 INFO  Log:14 -$$$$$$$$$$$$$$$$$$$$$                 TC002_Extent_SuiteTest       $$$$$$$$$$$$$$$$$$$$$$$$$
+2017-06-21 12:26:17 INFO  Log:15 -****************************************************************************************
+2017-06-21 12:26:17 INFO  Log:16 -****************************************************************************************
+2017-06-21 12:26:17 INFO  Log:21 -XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX
+2017-06-21 12:26:17 INFO  Log:22 -X
+2017-06-21 12:26:17 INFO  Log:23 -X
+2017-06-21 12:26:17 INFO  Log:24 -X
+2017-06-21 12:26:17 INFO  Log:25 -X
+2017-06-21 12:26:17 DEBUG cache:45 -Couldn't find template in cache for "index.ftl"("en", UTF-8, parsed); will try to load it.
+2017-06-21 12:26:17 DEBUG cache:45 -TemplateLoader.findTemplateSource("index_en.ftl"): Not found
+2017-06-21 12:26:17 DEBUG cache:45 -TemplateLoader.findTemplateSource("index.ftl"): Found
+2017-06-21 12:26:17 DEBUG cache:45 -Loading template for "index.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/saikiran.nataraja/.m2/repository/com/aventstack/extentreports/3.0.6/extentreports-3.0.6.jar!/com/aventstack/extentreports/view/html-report/index.ftl"
+2017-06-21 12:26:17 DEBUG cache:45 -Couldn't find template in cache for "head.ftl"("en", UTF-8, parsed); will try to load it.
+2017-06-21 12:26:17 DEBUG cache:45 -TemplateLoader.findTemplateSource("head_en.ftl"): Not found
+2017-06-21 12:26:17 DEBUG cache:45 -TemplateLoader.findTemplateSource("head.ftl"): Found
+2017-06-21 12:26:17 DEBUG cache:45 -Loading template for "head.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/saikiran.nataraja/.m2/repository/com/aventstack/extentreports/3.0.6/extentreports-3.0.6.jar!/com/aventstack/extentreports/view/html-report/head.ftl"
+2017-06-21 12:26:17 DEBUG cache:45 -Couldn't find template in cache for "nav.ftl"("en", UTF-8, parsed); will try to load it.
+2017-06-21 12:26:17 DEBUG cache:45 -TemplateLoader.findTemplateSource("nav_en.ftl"): Not found
+2017-06-21 12:26:17 DEBUG cache:45 -TemplateLoader.findTemplateSource("nav.ftl"): Found
+2017-06-21 12:26:17 DEBUG cache:45 -Loading template for "nav.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/saikiran.nataraja/.m2/repository/com/aventstack/extentreports/3.0.6/extentreports-3.0.6.jar!/com/aventstack/extentreports/view/html-report/nav.ftl"
+2017-06-21 12:26:17 DEBUG cache:45 -Couldn't find template in cache for "test-view/test-view.ftl"("en", UTF-8, parsed); will try to load it.
+2017-06-21 12:26:17 DEBUG cache:45 -TemplateLoader.findTemplateSource("test-view/test-view_en.ftl"): Not found
+2017-06-21 12:26:17 DEBUG cache:45 -TemplateLoader.findTemplateSource("test-view/test-view.ftl"): Found
+2017-06-21 12:26:17 DEBUG cache:45 -Loading template for "test-view/test-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/saikiran.nataraja/.m2/repository/com/aventstack/extentreports/3.0.6/extentreports-3.0.6.jar!/com/aventstack/extentreports/view/html-report/test-view/test-view.ftl"
+2017-06-21 12:26:17 DEBUG cache:45 -Couldn't find template in cache for "test-view/test-view-charts.ftl"("en", UTF-8, parsed); will try to load it.
+2017-06-21 12:26:17 DEBUG cache:45 -TemplateLoader.findTemplateSource("test-view/test-view-charts_en.ftl"): Not found
+2017-06-21 12:26:17 DEBUG cache:45 -TemplateLoader.findTemplateSource("test-view/test-view-charts.ftl"): Found
+2017-06-21 12:26:17 DEBUG cache:45 -Loading template for "test-view/test-view-charts.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/saikiran.nataraja/.m2/repository/com/aventstack/extentreports/3.0.6/extentreports-3.0.6.jar!/com/aventstack/extentreports/view/html-report/test-view/test-view-charts.ftl"
+2017-06-21 12:26:17 DEBUG cache:45 -Couldn't find template in cache for "test-view/standard.ftl"("en", UTF-8, parsed); will try to load it.
+2017-06-21 12:26:17 DEBUG cache:45 -TemplateLoader.findTemplateSource("test-view/standard_en.ftl"): Not found
+2017-06-21 12:26:17 DEBUG cache:45 -TemplateLoader.findTemplateSource("test-view/standard.ftl"): Found
+2017-06-21 12:26:17 DEBUG cache:45 -Loading template for "test-view/standard.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/saikiran.nataraja/.m2/repository/com/aventstack/extentreports/3.0.6/extentreports-3.0.6.jar!/com/aventstack/extentreports/view/html-report/test-view/standard.ftl"
+2017-06-21 12:26:17 DEBUG cache:45 -Couldn't find template in cache for "category-view/category-view.ftl"("en", UTF-8, parsed); will try to load it.
+2017-06-21 12:26:17 DEBUG cache:45 -TemplateLoader.findTemplateSource("category-view/category-view_en.ftl"): Not found
+2017-06-21 12:26:17 DEBUG cache:45 -TemplateLoader.findTemplateSource("category-view/category-view.ftl"): Found
+2017-06-21 12:26:17 DEBUG cache:45 -Loading template for "category-view/category-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/saikiran.nataraja/.m2/repository/com/aventstack/extentreports/3.0.6/extentreports-3.0.6.jar!/com/aventstack/extentreports/view/html-report/category-view/category-view.ftl"
+2017-06-21 12:26:17 DEBUG cache:45 -Couldn't find template in cache for "author-view/author-view.ftl"("en", UTF-8, parsed); will try to load it.
+2017-06-21 12:26:17 DEBUG cache:45 -TemplateLoader.findTemplateSource("author-view/author-view_en.ftl"): Not found
+2017-06-21 12:26:17 DEBUG cache:45 -TemplateLoader.findTemplateSource("author-view/author-view.ftl"): Found
+2017-06-21 12:26:17 DEBUG cache:45 -Loading template for "author-view/author-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/saikiran.nataraja/.m2/repository/com/aventstack/extentreports/3.0.6/extentreports-3.0.6.jar!/com/aventstack/extentreports/view/html-report/author-view/author-view.ftl"
+2017-06-21 12:26:17 DEBUG cache:45 -Couldn't find template in cache for "exception-view/exception-view.ftl"("en", UTF-8, parsed); will try to load it.
+2017-06-21 12:26:17 DEBUG cache:45 -TemplateLoader.findTemplateSource("exception-view/exception-view_en.ftl"): Not found
+2017-06-21 12:26:17 DEBUG cache:45 -TemplateLoader.findTemplateSource("exception-view/exception-view.ftl"): Found
+2017-06-21 12:26:17 DEBUG cache:45 -Loading template for "exception-view/exception-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/saikiran.nataraja/.m2/repository/com/aventstack/extentreports/3.0.6/extentreports-3.0.6.jar!/com/aventstack/extentreports/view/html-report/exception-view/exception-view.ftl"
+2017-06-21 12:26:17 DEBUG cache:45 -Couldn't find template in cache for "dashboard-view/dashboard-view.ftl"("en", UTF-8, parsed); will try to load it.
+2017-06-21 12:26:17 DEBUG cache:45 -TemplateLoader.findTemplateSource("dashboard-view/dashboard-view_en.ftl"): Not found
+2017-06-21 12:26:17 DEBUG cache:45 -TemplateLoader.findTemplateSource("dashboard-view/dashboard-view.ftl"): Found
+2017-06-21 12:26:17 DEBUG cache:45 -Loading template for "dashboard-view/dashboard-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/saikiran.nataraja/.m2/repository/com/aventstack/extentreports/3.0.6/extentreports-3.0.6.jar!/com/aventstack/extentreports/view/html-report/dashboard-view/dashboard-view.ftl"
+2017-06-21 12:26:17 DEBUG cache:45 -Couldn't find template in cache for "logs-view/testrunner-logs-view.ftl"("en", UTF-8, parsed); will try to load it.
+2017-06-21 12:26:17 DEBUG cache:45 -TemplateLoader.findTemplateSource("logs-view/testrunner-logs-view_en.ftl"): Not found
+2017-06-21 12:26:17 DEBUG cache:45 -TemplateLoader.findTemplateSource("logs-view/testrunner-logs-view.ftl"): Found
+2017-06-21 12:26:17 DEBUG cache:45 -Loading template for "logs-view/testrunner-logs-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/saikiran.nataraja/.m2/repository/com/aventstack/extentreports/3.0.6/extentreports-3.0.6.jar!/com/aventstack/extentreports/view/html-report/logs-view/testrunner-logs-view.ftl"
+2017-06-21 12:26:17 INFO  Log:12 -****************************************************************************************
+2017-06-21 12:26:17 INFO  Log:13 -****************************************************************************************
+2017-06-21 12:26:17 INFO  Log:14 -$$$$$$$$$$$$$$$$$$$$$                 TC001_Extent_InitialSetup       $$$$$$$$$$$$$$$$$$$$$$$$$
+2017-06-21 12:26:17 INFO  Log:15 -****************************************************************************************
+2017-06-21 12:26:17 INFO  Log:16 -****************************************************************************************
+2017-06-21 12:26:17 INFO  Log:21 -XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX
+2017-06-21 12:26:17 INFO  Log:22 -X
+2017-06-21 12:26:17 INFO  Log:23 -X
+2017-06-21 12:26:17 INFO  Log:24 -X
+2017-06-21 12:26:17 INFO  Log:25 -X
+2017-06-21 12:26:17 DEBUG cache:45 -Couldn't find template in cache for "index.ftl"("en", UTF-8, parsed); will try to load it.
+2017-06-21 12:26:17 DEBUG cache:45 -TemplateLoader.findTemplateSource("index_en.ftl"): Not found
+2017-06-21 12:26:17 DEBUG cache:45 -TemplateLoader.findTemplateSource("index.ftl"): Found
+2017-06-21 12:26:17 DEBUG cache:45 -Loading template for "index.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/saikiran.nataraja/.m2/repository/com/aventstack/extentreports/3.0.6/extentreports-3.0.6.jar!/com/aventstack/extentreports/view/html-report/index.ftl"
+2017-06-21 12:26:17 DEBUG cache:45 -Couldn't find template in cache for "head.ftl"("en", UTF-8, parsed); will try to load it.
+2017-06-21 12:26:17 DEBUG cache:45 -TemplateLoader.findTemplateSource("head_en.ftl"): Not found
+2017-06-21 12:26:17 DEBUG cache:45 -TemplateLoader.findTemplateSource("head.ftl"): Found
+2017-06-21 12:26:17 DEBUG cache:45 -Loading template for "head.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/saikiran.nataraja/.m2/repository/com/aventstack/extentreports/3.0.6/extentreports-3.0.6.jar!/com/aventstack/extentreports/view/html-report/head.ftl"
+2017-06-21 12:26:17 DEBUG cache:45 -Couldn't find template in cache for "nav.ftl"("en", UTF-8, parsed); will try to load it.
+2017-06-21 12:26:17 DEBUG cache:45 -TemplateLoader.findTemplateSource("nav_en.ftl"): Not found
+2017-06-21 12:26:17 DEBUG cache:45 -TemplateLoader.findTemplateSource("nav.ftl"): Found
+2017-06-21 12:26:17 DEBUG cache:45 -Loading template for "nav.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/saikiran.nataraja/.m2/repository/com/aventstack/extentreports/3.0.6/extentreports-3.0.6.jar!/com/aventstack/extentreports/view/html-report/nav.ftl"
+2017-06-21 12:26:17 DEBUG cache:45 -Couldn't find template in cache for "test-view/test-view.ftl"("en", UTF-8, parsed); will try to load it.
+2017-06-21 12:26:17 DEBUG cache:45 -TemplateLoader.findTemplateSource("test-view/test-view_en.ftl"): Not found
+2017-06-21 12:26:17 DEBUG cache:45 -TemplateLoader.findTemplateSource("test-view/test-view.ftl"): Found
+2017-06-21 12:26:17 DEBUG cache:45 -Loading template for "test-view/test-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/saikiran.nataraja/.m2/repository/com/aventstack/extentreports/3.0.6/extentreports-3.0.6.jar!/com/aventstack/extentreports/view/html-report/test-view/test-view.ftl"
+2017-06-21 12:26:17 DEBUG cache:45 -Couldn't find template in cache for "test-view/test-view-charts.ftl"("en", UTF-8, parsed); will try to load it.
+2017-06-21 12:26:17 DEBUG cache:45 -TemplateLoader.findTemplateSource("test-view/test-view-charts_en.ftl"): Not found
+2017-06-21 12:26:17 DEBUG cache:45 -TemplateLoader.findTemplateSource("test-view/test-view-charts.ftl"): Found
+2017-06-21 12:26:17 DEBUG cache:45 -Loading template for "test-view/test-view-charts.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/saikiran.nataraja/.m2/repository/com/aventstack/extentreports/3.0.6/extentreports-3.0.6.jar!/com/aventstack/extentreports/view/html-report/test-view/test-view-charts.ftl"
+2017-06-21 12:26:17 DEBUG cache:45 -Couldn't find template in cache for "test-view/standard.ftl"("en", UTF-8, parsed); will try to load it.
+2017-06-21 12:26:17 DEBUG cache:45 -TemplateLoader.findTemplateSource("test-view/standard_en.ftl"): Not found
+2017-06-21 12:26:17 DEBUG cache:45 -TemplateLoader.findTemplateSource("test-view/standard.ftl"): Found
+2017-06-21 12:26:17 DEBUG cache:45 -Loading template for "test-view/standard.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/saikiran.nataraja/.m2/repository/com/aventstack/extentreports/3.0.6/extentreports-3.0.6.jar!/com/aventstack/extentreports/view/html-report/test-view/standard.ftl"
+2017-06-21 12:26:17 DEBUG cache:45 -"test-view/standard.ftl"("en", UTF-8, parsed) cached copy not yet stale; using cached.
+2017-06-21 12:26:17 DEBUG cache:45 -Couldn't find template in cache for "category-view/category-view.ftl"("en", UTF-8, parsed); will try to load it.
+2017-06-21 12:26:17 DEBUG cache:45 -TemplateLoader.findTemplateSource("category-view/category-view_en.ftl"): Not found
+2017-06-21 12:26:17 DEBUG cache:45 -TemplateLoader.findTemplateSource("category-view/category-view.ftl"): Found
+2017-06-21 12:26:17 DEBUG cache:45 -Loading template for "category-view/category-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/saikiran.nataraja/.m2/repository/com/aventstack/extentreports/3.0.6/extentreports-3.0.6.jar!/com/aventstack/extentreports/view/html-report/category-view/category-view.ftl"
+2017-06-21 12:26:17 DEBUG cache:45 -Couldn't find template in cache for "author-view/author-view.ftl"("en", UTF-8, parsed); will try to load it.
+2017-06-21 12:26:17 DEBUG cache:45 -TemplateLoader.findTemplateSource("author-view/author-view_en.ftl"): Not found
+2017-06-21 12:26:17 DEBUG cache:45 -TemplateLoader.findTemplateSource("author-view/author-view.ftl"): Found
+2017-06-21 12:26:17 DEBUG cache:45 -Loading template for "author-view/author-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/saikiran.nataraja/.m2/repository/com/aventstack/extentreports/3.0.6/extentreports-3.0.6.jar!/com/aventstack/extentreports/view/html-report/author-view/author-view.ftl"
+2017-06-21 12:26:17 DEBUG cache:45 -Couldn't find template in cache for "exception-view/exception-view.ftl"("en", UTF-8, parsed); will try to load it.
+2017-06-21 12:26:17 DEBUG cache:45 -TemplateLoader.findTemplateSource("exception-view/exception-view_en.ftl"): Not found
+2017-06-21 12:26:17 DEBUG cache:45 -TemplateLoader.findTemplateSource("exception-view/exception-view.ftl"): Found
+2017-06-21 12:26:17 DEBUG cache:45 -Loading template for "exception-view/exception-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/saikiran.nataraja/.m2/repository/com/aventstack/extentreports/3.0.6/extentreports-3.0.6.jar!/com/aventstack/extentreports/view/html-report/exception-view/exception-view.ftl"
+2017-06-21 12:26:17 DEBUG cache:45 -Couldn't find template in cache for "dashboard-view/dashboard-view.ftl"("en", UTF-8, parsed); will try to load it.
+2017-06-21 12:26:17 DEBUG cache:45 -TemplateLoader.findTemplateSource("dashboard-view/dashboard-view_en.ftl"): Not found
+2017-06-21 12:26:17 DEBUG cache:45 -TemplateLoader.findTemplateSource("dashboard-view/dashboard-view.ftl"): Found
+2017-06-21 12:26:17 DEBUG cache:45 -Loading template for "dashboard-view/dashboard-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/saikiran.nataraja/.m2/repository/com/aventstack/extentreports/3.0.6/extentreports-3.0.6.jar!/com/aventstack/extentreports/view/html-report/dashboard-view/dashboard-view.ftl"
+2017-06-21 12:26:17 DEBUG cache:45 -Couldn't find template in cache for "logs-view/testrunner-logs-view.ftl"("en", UTF-8, parsed); will try to load it.
+2017-06-21 12:26:17 DEBUG cache:45 -TemplateLoader.findTemplateSource("logs-view/testrunner-logs-view_en.ftl"): Not found
+2017-06-21 12:26:17 DEBUG cache:45 -TemplateLoader.findTemplateSource("logs-view/testrunner-logs-view.ftl"): Found
+2017-06-21 12:26:17 DEBUG cache:45 -Loading template for "logs-view/testrunner-logs-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/saikiran.nataraja/.m2/repository/com/aventstack/extentreports/3.0.6/extentreports-3.0.6.jar!/com/aventstack/extentreports/view/html-report/logs-view/testrunner-logs-view.ftl"
+2017-06-21 12:26:17 DEBUG RequestAddCookies:123 -CookieSpec selected: default
+2017-06-21 12:26:17 DEBUG RequestAuthCache:77 -Auth cache not set in the context
+2017-06-21 12:26:17 DEBUG PoolingHttpClientConnectionManager:255 -Connection request: [route: {}->http://localhost:7644][total kept alive: 0; route allocated: 0 of 2000; total allocated: 0 of 2000]
+2017-06-21 12:26:17 DEBUG PoolingHttpClientConnectionManager:288 -Connection leased: [id: 5][route: {}->http://localhost:7644][total kept alive: 0; route allocated: 1 of 2000; total allocated: 1 of 2000]
+2017-06-21 12:26:17 DEBUG MainClientExec:235 -Opening connection {}->http://localhost:7644
+2017-06-21 12:26:17 DEBUG DefaultHttpClientConnectionOperator:139 -Connecting to localhost/127.0.0.1:7644
+2017-06-21 12:26:17 DEBUG DefaultHttpClientConnectionOperator:146 -Connection established 127.0.0.1:60047<->127.0.0.1:7644
+2017-06-21 12:26:17 DEBUG DefaultManagedHttpClientConnection:88 -http-outgoing-5: set socket timeout to 10800000
+2017-06-21 12:26:17 DEBUG MainClientExec:256 -Executing request DELETE /session/938fdf49bd57f6ab8d063ce1e76b14c9/window HTTP/1.1
+2017-06-21 12:26:17 DEBUG MainClientExec:261 -Target auth state: UNCHALLENGED
+2017-06-21 12:26:17 DEBUG MainClientExec:267 -Proxy auth state: UNCHALLENGED
+2017-06-21 12:26:17 DEBUG headers:133 -http-outgoing-5 >> DELETE /session/938fdf49bd57f6ab8d063ce1e76b14c9/window HTTP/1.1
+2017-06-21 12:26:17 DEBUG headers:136 -http-outgoing-5 >> Host: localhost:7644
+2017-06-21 12:26:17 DEBUG headers:136 -http-outgoing-5 >> Connection: Keep-Alive
+2017-06-21 12:26:17 DEBUG headers:136 -http-outgoing-5 >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_121)
+2017-06-21 12:26:17 DEBUG headers:136 -http-outgoing-5 >> Accept-Encoding: gzip,deflate
+2017-06-21 12:26:17 DEBUG wire:73 -http-outgoing-5 >> "DELETE /session/938fdf49bd57f6ab8d063ce1e76b14c9/window HTTP/1.1[\r][\n]"
+2017-06-21 12:26:17 DEBUG wire:73 -http-outgoing-5 >> "Host: localhost:7644[\r][\n]"
+2017-06-21 12:26:17 DEBUG wire:73 -http-outgoing-5 >> "Connection: Keep-Alive[\r][\n]"
+2017-06-21 12:26:17 DEBUG wire:73 -http-outgoing-5 >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_121)[\r][\n]"
+2017-06-21 12:26:17 DEBUG wire:73 -http-outgoing-5 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2017-06-21 12:26:17 DEBUG wire:73 -http-outgoing-5 >> "[\r][\n]"
+2017-06-21 12:26:19 DEBUG wire:73 -http-outgoing-5 << "HTTP/1.1 200 OK[\r][\n]"
+2017-06-21 12:26:19 DEBUG wire:73 -http-outgoing-5 << "Content-Length:72[\r][\n]"
+2017-06-21 12:26:19 DEBUG wire:73 -http-outgoing-5 << "Content-Type:application/json; charset=utf-8[\r][\n]"
+2017-06-21 12:26:19 DEBUG wire:73 -http-outgoing-5 << "Connection:close[\r][\n]"
+2017-06-21 12:26:19 DEBUG wire:73 -http-outgoing-5 << "[\r][\n]"
+2017-06-21 12:26:19 DEBUG wire:87 -http-outgoing-5 << "{"sessionId":"938fdf49bd57f6ab8d063ce1e76b14c9","status":0,"value":null}"
+2017-06-21 12:26:19 DEBUG headers:122 -http-outgoing-5 << HTTP/1.1 200 OK
+2017-06-21 12:26:19 DEBUG headers:125 -http-outgoing-5 << Content-Length:72
+2017-06-21 12:26:19 DEBUG headers:125 -http-outgoing-5 << Content-Type:application/json; charset=utf-8
+2017-06-21 12:26:19 DEBUG headers:125 -http-outgoing-5 << Connection:close
+2017-06-21 12:26:19 DEBUG DefaultManagedHttpClientConnection:79 -http-outgoing-5: Close connection
+2017-06-21 12:26:19 DEBUG MainClientExec:104 -Connection discarded
+2017-06-21 12:26:19 DEBUG PoolingHttpClientConnectionManager:326 -Connection released: [id: 5][route: {}->http://localhost:7644][total kept alive: 0; route allocated: 0 of 2000; total allocated: 0 of 2000]
