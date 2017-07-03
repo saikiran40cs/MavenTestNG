@@ -1,6 +1,5 @@
 package utilities;
 
-import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -44,7 +43,6 @@ public class XL_Reader {
 	 * @throws IOException 
 	 */
 	public XL_Reader(String path) throws IOException {
-		// System.gc();
 		this.path = path;
 		try {
 			fis = new FileInputStream(path);
@@ -61,40 +59,11 @@ public class XL_Reader {
 
 	}
 
-
 	public XL_Reader() {
-		// TODO Auto-generated constructor stub
-	}
-
-
-	/**
-	 * Function to readExcel and send it to main class for Hybrid framework
-	 * @param filePath
-	 * @param fileName
-	 * @param sheetName
-	 * @return
-	 * @throws IOException
-	 */
-	public XSSFSheet readExcel(String filePath,String fileName,String sheetName) throws IOException{
-		//Create a object of File class to open xlsx file
-		File file =	new File(filePath+File.separator+fileName);
-		//Create an object of FileInputStream class to read excel file
-		FileInputStream inputStream = new FileInputStream(file);
-		XSSFWorkbook KiranWorkbook = null;
-		//Find the file extension by spliting file name in substing and getting only extension name
-		String fileExtensionName = fileName.substring(fileName.indexOf('.'));
-		//Check condition if the file is xlsx file
-		if(fileExtensionName.equals(".xlsx")){
-			//If it is xlsx file then create object of XSSFWorkbook class
-			KiranWorkbook = new XSSFWorkbook(inputStream);
-		}
-		//Check condition if the file is xls file
-		else if(fileExtensionName.equals(".xls")){
-			//If it is xls file then create object of HSSFWorkbook class
-			Reporter.log("Please pass and XLSX file");
-		}
-		//Read sheet inside the workbook by its name
-		return  KiranWorkbook.getSheet(sheetName);	
+		fis = null;
+		sheet = null;
+		row = null;
+		cell = null;
 	}
 
 	/**
@@ -114,9 +83,7 @@ public class XL_Reader {
 	}
 
 	/**
-	 * Author:- Sai Kiran Nataraja Get Column Count for a particular row in a
-	 * worksheet
-	 * 
+	 * Author:- Sai Kiran Nataraja Get Column Count for a particular row in a worksheet
 	 * @param sheetName
 	 * @param rowNumber
 	 * @return
@@ -193,7 +160,7 @@ public class XL_Reader {
 			else
 				return String.valueOf(cell.getBooleanCellValue());
 		} catch (Exception e) {
-			Reporter.log("File IO Exception in XLS_REadWrite row " + rowNum + " or column " + colName + " does not exist in xls" + e.toString());
+			Reporter.log("File IO Exception in XL_Reader row " + rowNum + " or column " + colName + " does not exist in xls" + e.toString());
 			throw e;
 		}
 	}
@@ -255,7 +222,7 @@ public class XL_Reader {
 				return String.valueOf(cell.getBooleanCellValue());
 
 		} catch (Exception e) {
-			Reporter.log("File IO Exception in XLS_REadWrite.java row " + rowNum + " or column " + colName + " does not exist in xls" + e.toString());
+			Reporter.log("File IO Exception in XL_Reader.java row " + rowNum + " or column " + colName + " does not exist in xls" + e.toString());
 			throw e;
 		}
 	}
@@ -303,7 +270,7 @@ public class XL_Reader {
 			else
 				return String.valueOf(cell.getBooleanCellValue());
 		} catch (Exception e) {
-			Reporter.log("File IO Exception in XLS_REadWrite row " + rowNum + " or column " + colNum + " does not exist in xls" + e.toString());
+			Reporter.log("File IO Exception in XL_Reader row " + rowNum + " or column " + colNum + " does not exist in xls" + e.toString());
 			throw e;
 		}
 	}
@@ -481,7 +448,7 @@ public class XL_Reader {
 
 			fileOut.close();
 		} catch (Exception e) {
-			Reporter.log("File IO Exception in XLS_REadWrite.java" + e.toString());
+			Reporter.log("File IO Exception in XL_Reader.java" + e.toString());
 			return false;
 		}
 		return true;
@@ -575,7 +542,7 @@ public class XL_Reader {
 			workbook.close();
 			fis.close();
 		} catch (Exception e) {
-			Reporter.log("File IO Exception in XLS_REadWrite.java" + e.toString());
+			Reporter.log("File IO Exception in XL_Reader.java" + e.toString());
 			throw e;
 		}
 		return true;

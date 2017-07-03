@@ -6,12 +6,22 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.Select;
 
-public class UIOperation {
+public class UIOperation extends sharedFunctions{
 
 	WebDriver driver;
-	public UIOperation(WebDriver driver){
-		this.driver = driver;
+	public UIOperation(){
+		this.driver = webdriver;
 	}
+	
+	/**
+	 * Function to perform actions in UIr
+	 * @param properties
+	 * @param operation
+	 * @param objectName
+	 * @param objectType
+	 * @param value
+	 * @throws Exception
+	 */
 	public void perform(Properties p,String operation,String objectName,String objectType,String value) throws Exception{
 		switch (operation.toUpperCase()) {
 		case "CLICK":
@@ -27,7 +37,7 @@ public class UIOperation {
 			new Select(driver.findElement(this.getObject(p, objectName, objectType))).selectByVisibleText(value);
 			break;
 		case "GOTOURL":
-			//Get url of application
+			//Get URL of the application
 			driver.get(p.getProperty(value));
 			break;
 		case "GETTEXT":
@@ -39,42 +49,42 @@ public class UIOperation {
 			break;
 		}
 	}
-	
+
 	/**
 	 * Find element BY using object type and value
-	 * @param p
+	 * @param properties
 	 * @param objectName
 	 * @param objectType
-	 * @return
+	 * @returns the object
 	 * @throws Exception
 	 */
 	private By getObject(Properties p,String objectName,String objectType) throws Exception{
 		// Find by xpath
-		if (objectType.equalsIgnoreCase("XPATH")) {
+		if ("XPATH".equalsIgnoreCase(objectType)) {
 			return By.xpath(p.getProperty(objectName));
 		}
 		// find by ID
-		else if (objectType.equalsIgnoreCase("ID")) {
+		else if ("ID".equalsIgnoreCase(objectType)) {
 			return By.id(p.getProperty(objectName));
 		}
 		// find by class
-		else if (objectType.equalsIgnoreCase("CLASSNAME")) {
+		else if ("CLASSNAME".equalsIgnoreCase(objectType)) {
 			return By.className(p.getProperty(objectName));
 		}
 		// find by name
-		else if (objectType.equalsIgnoreCase("NAME")) {
+		else if ("NAME".equalsIgnoreCase(objectType)) {
 			return By.name(p.getProperty(objectName));
 		}
 		// Find by css
-		else if (objectType.equalsIgnoreCase("CSS")) {
+		else if ("CSS".equalsIgnoreCase(objectType)) {
 			return By.cssSelector(p.getProperty(objectName));
 		}
 		// find by link
-		else if (objectType.equalsIgnoreCase("LINK")) {
+		else if ("LINK".equalsIgnoreCase(objectType)) {
 			return By.linkText(p.getProperty(objectName));
 		}
 		// find by partial link
-		else if (objectType.equalsIgnoreCase("PARTIALLINK")) {
+		else if ("PARTIALLINK".equalsIgnoreCase(objectType)) {
 			return By.partialLinkText(p.getProperty(objectName));
 		} else {
 			throw new Exception("Wrong object type");

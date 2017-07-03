@@ -1,32 +1,16 @@
 package regressionPack_2;
 
-import java.util.concurrent.TimeUnit;
-
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import PageFactory.HomePage;
 import PageFactory.LoginPage;
+import functionLibrary.sharedFunctions;
 
+public class TC003ExecuteWithPageFactory extends sharedFunctions{
 
-
-
-public class TC003ExecuteWithPageFactory {
-
-	WebDriver driver;
 	LoginPage objLogin;
 	HomePage objHomePage;
-	
-	@BeforeTest
-	public void setup(){
-		driver = new FirefoxDriver();
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		driver.get("http://demo.borland.com/InsuranceWebExtJS/");
-	}
 
 	/**
 	 * This regressionPack_2 go to http://demo.borland.com/InsuranceWebExtJS/
@@ -35,19 +19,15 @@ public class TC003ExecuteWithPageFactory {
 	 */
 	@Test(priority=0)
 	public void testLoginPageAppearCorrect(){
+		initializeExtentReport();
+		webdriver.get("http://demo.borland.com/InsuranceWebExtJS/");
 		//Create Login Page object
-	objLogin = new LoginPage(driver);
-	//loginButton to application
-	objLogin.loginToApp("john.smith@gmail.com", "john");
-	// go the next page
-	objHomePage = new HomePage(driver);
-	//Verify home page
-	Assert.assertTrue(objHomePage.getHomePageDashboardUserName().equalsIgnoreCase("John Smith"));
+		objLogin = new LoginPage(webdriver);
+		//loginButton to application
+		objLogin.loginToApp("john.smith@gmail.com", "john");
+		// go the next page
+		objHomePage = new HomePage(webdriver);
+		//Verify home page
+		Assert.assertTrue(objHomePage.getHomePageDashboardUserName().equalsIgnoreCase("John Smith"));
 	}
-	
-	@AfterTest
-	public void close(){
-		driver.close();
-	}
-	
 }

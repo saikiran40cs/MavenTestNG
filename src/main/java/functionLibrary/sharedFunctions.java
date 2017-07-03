@@ -80,11 +80,23 @@ public class sharedFunctions extends ExtentManager {
 			Object[][] testgetdata = TestUtilities.getTestDataBasedOnTestCase(Const.getTCXLS(), super.getClass().getSimpleName());
 			return testgetdata;
 		} catch (NullPointerException e) {
-			Reporter.log("The test data provider in WAS Generic Functions could not identify excel");
+			Reporter.log("The test data provider in sharedFunctions could not identify excel");
 			throw e;
 		}
 	}
 
+	@DataProvider(name = "hybridData")
+	public Object[][] getDataFromDataprovider() throws IOException {
+		Object[][] getTestDataArray;
+		try {
+			getTestDataArray = TestUtilities.getRowByRowDataFromXL(Const.testDataPath, "TestCase.xlsx","Hybrid_Key_Framework");
+			return getTestDataArray;
+		} catch (IOException e) {
+			Reporter.log("The test data provider in sharedFunctions could not identify excel");
+			throw e;
+		}		
+	}
+	
 	@BeforeSuite
 	/**
 	 * Function to change the Error Screenshot folder name before the Suite starts
@@ -357,10 +369,10 @@ public class sharedFunctions extends ExtentManager {
 			// adding screenshots to log
 			testInstance.log(Status.INFO,"Refer below Snapshot: ",MediaEntityBuilder.createScreenCaptureFromPath(relativeErrImgPath).build());						
 		}else if (testResult.getStatus() == ITestResult.SKIP) {
-			Reporter.log(" - SKIPPED.",true);
+			Reporter.log(" - SKIPPED.",false);
 			testInstance.log(Status.SKIP, "Test skipped: " + testResult.getThrowable().getMessage());
 		}else{
-			Reporter.log(" - PASSED.",true);
+			Reporter.log(" - PASSED.",false);
 			testInstance.log(Status.PASS, "'"+executingTestCaseName+"' is passed based on the test criteria.");
 		}
 		

@@ -1,6 +1,7 @@
 package utilities;
 
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
@@ -8,6 +9,8 @@ import org.apache.poi.ss.usermodel.BorderStyle;
 import org.apache.poi.ss.usermodel.FillPatternType;
 import org.apache.poi.ss.usermodel.HorizontalAlignment;
 import org.apache.poi.ss.usermodel.IndexedColors;
+import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.util.CellRangeAddress;
 import org.apache.poi.xssf.usermodel.XSSFCell;
 import org.apache.poi.xssf.usermodel.XSSFCellStyle;
@@ -43,6 +46,52 @@ public class TestUtilities {
 		return isExecutable;
      }
 
+	/**
+	 * Function to get row by row details from Excel file
+	 * @param testDataPath
+	 * @param testDataFileName
+	 * @param testDataSheetName
+	 * @returns Object array with the contents from excel
+	 * @throws IOException
+	 */
+	public static Object[][] getRowByRowDataFromXL(String testDataPath,String testDataFileName,String testDataSheetName) throws IOException {
+		Object[][] object;
+		
+		//Create a object of File class to open xlsx file
+		File file =	new File(testDataPath+File.separator+testDataFileName);
+		//Create an object of FileInputStream class to read excel file
+		FileInputStream inputStream = new FileInputStream(file);
+		XSSFWorkbook kiranWorkbook = null;
+		//Find the file extension by spliting file name in substing and getting only extension name
+		String fileExtensionName = testDataFileName.substring(testDataFileName.indexOf('.'));
+		//Check condition if the file is xlsx file
+		if(".xlsx".equalsIgnoreCase(fileExtensionName)){
+			//If it is xlsx file then create object of XSSFWorkbook class
+			kiranWorkbook = new XSSFWorkbook(inputStream);
+		}
+		//Check condition if the file is xls file
+		else if(".xls".equalsIgnoreCase(fileExtensionName)){
+			//If it is xls file then create object of HSSFWorkbook class
+			Reporter.log("Please pass an XLSX file");
+		}
+		//Read sheet inside the workbook by its name -keyword sheet
+		Sheet kiranSheet = kiranWorkbook.getSheet(testDataSheetName);	
+		// Find number of rows in excel file
+		int rowCount = kiranSheet.getLastRowNum() - kiranSheet.getFirstRowNum();
+		object = new Object[rowCount][5]; //'5' is the maximum number of columns available in the excel
+		for (int i = 0; i < rowCount; i++) {
+			// Loop over all the rows
+			Row row = kiranSheet.getRow(i + 1);
+			// Create a loop to print cell values in a row
+			for (int j = 0; j < row.getLastCellNum(); j++) {
+				object[i][j] = row.getCell(j).toString();
+			}
+		}
+		inputStream.close();
+		kiranWorkbook.close();
+		return object;
+	}
+	
 	/**
 	 * Function to generate excel report based on the test scripts
 	 * @author saikiran.nataraja
