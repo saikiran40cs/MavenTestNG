@@ -113,6 +113,8 @@ public class sharedFunctions extends ExtentManager {
 	 */
 	@BeforeClass
 	public void createExtentInstance(){
+		// If you want to use log4j2 version enable below comment
+		//System.setProperty("log4j.configurationFile", Const.log4j2Path);
 		loggerInstance=new Log();
 		ExtentManager xtentMgr= new ExtentManager();
 		extentInstance = xtentMgr.createExtentRep();
